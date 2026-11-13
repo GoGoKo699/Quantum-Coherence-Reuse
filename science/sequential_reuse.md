@@ -22,9 +22,9 @@ $$
 Since $\rho_0=\tau_0$, induction proves
 
 $$
-D\!\left(\rho_m,\sigma_L\otimes|+\rangle\langle+|^{\otimes N}\right)
+D\left(\rho_m,\sigma_L\otimes|+\rangle\langle+|^{\otimes N}\right)
 \leq m\varepsilon_L
-\leq\frac{7N}{\sqrt6}\sin^2\!\frac\pi L
+\leq\frac{7N}{\sqrt6}\sin^2\frac\pi L
 \leq\frac{7\pi^2}{\sqrt6}\frac{N}{L^2}.
 $$
 
@@ -37,7 +37,7 @@ The proof allows the actual reference to become correlated with earlier outputs.
 For any $0<\delta\leq1$, choose
 
 $$
-L=\left\lceil\sqrt{\frac{29N}{\delta}}\right\rceil.
+L=\left\lceil\sqrt{(29N)/(\delta)}\right\rceil.
 $$
 
 For even $N\geq2$, this choice satisfies $L\geq3$ and gives global trace error at most $\delta$. The initial reference mean excitation is
@@ -45,7 +45,7 @@ For even $N\geq2$, this choice satisfies $L\geq3$ and gives global trace error a
 $$
 E_L=\frac L2-1,
 \qquad
-E_L+1\leq\frac12\sqrt{\frac{29N}{\delta}}+\frac12.
+E_L+1\leq\frac12\sqrt{(29N)/(\delta)}+\frac12.
 $$
 
 Together with the [mean-energy converse](converse.md), this establishes the stated $\Theta(\sqrt{N/\delta})$ reference-energy law for small $\delta$. The resource is the reference's initial mean energy above its ground state. The $N/2$ excitation initially supplied in the qubit register is separate. Neither the reference nor the total preparation energy is zero cost.
@@ -63,13 +63,13 @@ $$
 At use $j$, suppose the implemented pair channel $\widetilde{\mathcal U}_j$ differs from the ideal $\mathcal U_L(\cdot)=U_L(\cdot)U_L^\dagger$ by
 
 $$
-\frac12\|\widetilde{\mathcal U}_j-\mathcal U_L\|_\diamond\leq\zeta_j.
+\frac12\Vert \widetilde{\mathcal U}_j-\mathcal U_L\Vert _\diamond\leq\zeta_j.
 $$
 
 The diamond norm includes arbitrary external systems, so this bound remains applicable when the reference is correlated with every earlier output. A channel hybrid and the preceding state hybrid give
 
 $$
-D\!\left(\widetilde\rho_m,
+D\left(\widetilde\rho_m,
 \sigma_L\otimes|+\rangle\langle+|^{\otimes N}\right)
 \leq\eta+\sum_{j=1}^m\zeta_j+m\varepsilon_L.
 $$
@@ -77,7 +77,7 @@ $$
 If the return target is the actual prepared state $\widetilde\sigma_L$ rather than the nominal $\sigma_L$, an additional endpoint comparison gives
 
 $$
-D\!\left(\widetilde\rho_m,
+D\left(\widetilde\rho_m,
 \widetilde\sigma_L\otimes|+\rangle\langle+|^{\otimes N}\right)
 \leq2\eta+\sum_{j=1}^m\zeta_j+m\varepsilon_L.
 $$
@@ -89,7 +89,7 @@ The stability bound also applies to noncovariant implementation errors as an app
 If preparation errors stay within the finite ladder, the mean-energy deviation obeys
 
 $$
-|\operatorname{Tr}H_R(\widetilde\sigma_L-\sigma_L)|
+|\mathrm{Tr}H_R(\widetilde\sigma_L-\sigma_L)|
 \leq(L-2)\eta.
 $$
 

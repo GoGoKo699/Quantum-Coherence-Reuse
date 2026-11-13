@@ -2,22 +2,22 @@
 
 The reference is a finite energy ladder. A single fixed unitary acts on it and a fresh pair of qubits in $|01\rangle$, approximately producing $|++\rangle$ while returning the reference. The unitary preserves total excitation exactly. [Sequential reuse](sequential_reuse.md) turns its one-use estimate into a bound on the entire output batch, including its correlations with the reference.
 
-Throughout, $D(\rho,\sigma)=\frac12\|\rho-\sigma\|_1$. Energies are measured in units of the qubit excitation gap. The initial excitation supplied in each pair is one.
+Throughout, $D(\rho,\sigma)=\frac12\Vert \rho-\sigma\Vert _1$. Energies are measured in units of the qubit excitation gap. The initial excitation supplied in each pair is one.
 
 ## Reference profile
 
 Choose an integer $L\geq3$ and let the reference have $d=L-1$ levels,
 
 $$
-H_R=\sum_{r=0}^{L-2}r\,|r\rangle\langle r|.
+H_R=\sum_{r=0}^{L-2}r |r\rangle\langle r|.
 $$
 
 Prepare the pure state
 
 $$
-|R_L\rangle=\sum_{r=0}^{L-2}\sqrt{p_r}\,|r\rangle,
+|R_L\rangle=\sum_{r=0}^{L-2}\sqrt{p_r} |r\rangle,
 \qquad
-p_r=\frac{8}{3L}\sin^4\!\left(\frac{\pi(r+1)}{L}\right).
+p_r=\frac{8}{3L}\sin^4\left(\frac{\pi(r+1)}{L}\right).
 $$
 
 Set $p_r=0$ outside this range. The trigonometric sums and reflection symmetry give
@@ -44,7 +44,7 @@ For each total charge $\ell$, denote its sector by
 
 $$
 \mathcal H_\ell=
-\operatorname{span}\{|r,b_1b_2\rangle:r+b_1+b_2=\ell\}.
+\mathrm{span}\lbrace |r,b_1b_2\rangle:r+b_1+b_2=\ell\rbrace .
 $$
 
 Every sector has dimension at most four. On an occupied input sector, $1\leq\ell\leq L-1$, define
@@ -60,11 +60,11 @@ and the normalized vector
 $$
 |v_\ell\rangle=
 \frac{1}{2\sqrt{q_{\ell-1}}}
-\sum_{\substack{r,b_1,b_2\\r+b_1+b_2=\ell}}
-\sqrt{p_r}\,|r,b_1b_2\rangle.
+\sum_{r+b_1+b_2=\ell}
+\sqrt{p_r} |r,b_1b_2\rangle.
 $$
 
-Its denominator is nonzero because $p_{\ell-1}>0$. This is the normalized projection of $|R_L\rangle|++\rangle$ onto $\mathcal H_\ell$.
+The sum ranges over $0\le r\le L-2$ and $b_1,b_2\in\lbrace0,1\rbrace$ satisfying the displayed charge constraint. Its denominator is nonzero because $p_{\ell-1}>0$. This is the normalized projection of $|R_L\rangle|++\rangle$ onto $\mathcal H_\ell$.
 
 Choose a real Householder block
 
@@ -97,7 +97,7 @@ The exact one-use error is therefore
 
 $$
 \varepsilon_L=
-D\!\left(U_L(|R_L\rangle\langle R_L|\otimes|01\rangle\langle01|)U_L^\dagger,
+D\left(U_L(|R_L\rangle\langle R_L|\otimes|01\rangle\langle01|)U_L^\dagger,
 |R_L\rangle\langle R_L|\otimes|++\rangle\langle++|\right)
 =\sqrt{1-B(p,q)^2}.
 $$
@@ -109,7 +109,7 @@ This overlap is maximal among exactly conserving unitaries for this fixed pure r
 The normalized-target-sector mechanism is inherited from covariant recovery. In [Marvian and Lloyd, *From clocks to cloners*, Section IV.B, Eq. (20)](https://arxiv.org/pdf/1608.07325), the unrotated Petz channel for a pure target decomposes into a mixture of vectors of the form
 
 $$
-|\phi_a\rangle=\sum_\ell\sqrt{p_{\ell-a}}\,|v_\ell\rangle,
+|\phi_a\rangle=\sum_\ell\sqrt{p_{\ell-a}} |v_\ell\rangle,
 $$
 
 with weights given by the target system's charge distribution. The pair output constructed here is exactly $|\phi_1\rangle$: the supplied input pair has sharp charge one, and a closed conserving unitary realizes that sector alignment deterministically. No measurement of the Petz mixture, branch selection, or free successful outcome is assumed. The present use of this mechanism is its finite conserving pair realization and composable error estimate, together with the [mixed-reference mean-energy converse](converse.md); approximate catalytic coherence and the recovery principle themselves are prior work.
@@ -176,14 +176,14 @@ The final one-pair guarantee, valid for every integer $L\geq3$, is
 $$
 \boxed{\displaystyle
 \varepsilon_L\leq
-\min\!\left\{1,\sqrt{\frac{98}{3}}\sin^2\!\frac\pi L\right\}.}
+\min\left\lbrace 1,\sqrt{(98)/(3)}\sin^2\frac\pi L\right\rbrace .}
 $$
 
 The numerical constant is a convenient sufficient bound, not an optimized constant.
 
 ## A sharper collective benchmark
 
-For an even batch size $N=2m$, a single conserving unitary on the reference and all input qubits can align total-charge sectors in the same way. Let $X$ have distribution $\operatorname{Bin}(N,1/2)-m$ and let $q^{(N)}=p*\operatorname{law}(X)$. Its optimal overlap within the fixed-reference conserving-unitary class is
+For an even batch size $N=2m$, a single conserving unitary on the reference and all input qubits can align total-charge sectors in the same way. Let $X$ have distribution $\mathrm{Bin}(N,1/2)-m$ and let $q^{(N)}=p*\mathrm{law}(X)$. Its optimal overlap within the fixed-reference conserving-unitary class is
 
 $$
 B_N=\sum_k\sqrt{p_kq_k^{(N)}},

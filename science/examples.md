@@ -8,7 +8,7 @@ Choose $L=4$. The reference has levels $r=0,1,2$ and state
 
 $$
 |R_4\rangle=\frac1{\sqrt6}|0\rangle+
-\sqrt{\frac23}|1\rangle+\frac1{\sqrt6}|2\rangle.
+\sqrt{2/3}|1\rangle+\frac1{\sqrt6}|2\rangle.
 $$
 
 Its mean excitation is one. For a fresh $|01\rangle$ pair, the initial centered charge distribution is $p=(1/6,2/3,1/6)$. The desired product has centered total-charge probabilities
@@ -21,7 +21,7 @@ $$
 At total charge $\ell=1$, the processor sends the occupied input vector $|0,01\rangle$ to
 
 $$
-|v_1\rangle=\sqrt{\frac23}|1,00\rangle+
+|v_1\rangle=\sqrt{2/3}|1,00\rangle+
 \frac1{\sqrt6}|0,01\rangle+\frac1{\sqrt6}|0,10\rangle.
 $$
 
@@ -30,8 +30,8 @@ At total charge $\ell=2$, it sends $|1,01\rangle$ to
 $$
 |v_2\rangle=
 \frac1{\sqrt{10}}|0,11\rangle+
-\sqrt{\frac25}|1,01\rangle+
-\sqrt{\frac25}|1,10\rangle+
+\sqrt{2/5}|1,01\rangle+
+\sqrt{2/5}|1,10\rangle+
 \frac1{\sqrt{10}}|2,00\rangle.
 $$
 
@@ -40,7 +40,7 @@ The charge-three vector follows by reflection of the ladder and complementing bo
 The exact one-pair overlap and error are
 
 $$
-B=\frac1{\sqrt6}+\sqrt{\frac5{18}},
+B=\frac1{\sqrt6}+\sqrt{5/18},
 \qquad
 \varepsilon_4=\sqrt{1-B^2}.
 $$
@@ -63,7 +63,7 @@ The repeated processor may correlate the actual reference with earlier outputs. 
 For even $N$ and desired global error $\delta$, the sufficient choice
 
 $$
-L=\left\lceil\sqrt{\frac{29N}{\delta}}\right\rceil,
+L=\left\lceil\sqrt{(29N)/(\delta)}\right\rceil,
 \qquad
 E_L=\frac L2-1
 $$

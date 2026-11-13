@@ -9,7 +9,7 @@ Each fresh qubit pair starts in $|01\rangle$. The same energy-conserving process
 Let $N\geq2$ be even and let $0<\delta\leq1/8$ be the allowed half trace distance from the complete ideal product. In units of the qubit energy gap, the minimum initial reference mean energy obeys
 
 $$
-\boxed{\displaystyle E_{\min}(N,\delta)=\Theta\!\left(\sqrt{\frac{N}{\delta}}\right).}
+\boxed{\displaystyle E_{\min}(N,\delta)=\Theta\left(\sqrt{(N)/(\delta)}\right).}
 $$
 
 The constants are uniform in $N$ and $\delta$ in this domain. The [precise theorem](science/model.md) distinguishes the unrestricted covariant optimization from the attaining sequential architecture.
@@ -44,6 +44,12 @@ Quadratic reference longevity, catalytic state preparation, and the importance o
 | Which conclusions and mechanisms come from earlier work? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 
 The [science overview](science/README.md) gives the connected proof route. The [reading guide](llms.txt) maps technical questions to the same sources.
+
+## Learn the project
+
+The educational anchor is **Watrous, *The Theory of Quantum Information* (2018)**. The [learning route](learning/README.md) connects its state-discrimination and channel-distance tools to this problem.
+
+Start with the [notation and source bridge](learning/WATROUS_BRIDGE.md), then follow the [worked tutorial](learning/TUTORIAL.md) and the [30-milestone map](learning/MILESTONES.md). Its 12 background and 18 narrative milestones build from individual states and channels to the complete resource law. The specialist proofs above remain authoritative.
 
 ## Reproduce
 

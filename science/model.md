@@ -27,7 +27,7 @@ $$
 The reference $R$ has a self-adjoint Hamiltonian $H_R\ge0$, with energy origin at its spectral infimum, and an initial density operator $\sigma_R$ satisfying
 
 $$
-E=\operatorname{Tr}(H_R\sigma_R)<\infty.
+E=\mathrm{Tr}(H_R\sigma_R)<\infty.
 $$
 
 The reference state is supplied and known, and is initially independent of the qubits. The converse permits finite or infinite-dimensional references, arbitrary degeneracies, sparse or continuous spectra, mixed states, and energy distributions with infinite second moment. There is no requirement that zero be an eigenvalue. Ordinary trace-class quantum states and their spectral energy distributions are meant; no assertion about general operator-algebraic states is needed.
@@ -37,7 +37,7 @@ The reference state is supplied and known, and is initially independent of the q
 An allowed global protocol is a completely positive trace-preserving map $\Lambda$ on $RS$ satisfying time-translation covariance:
 
 $$
-\Lambda\!\left(U_t\rho U_t^\dagger\right)
+\Lambda\left(U_t\rho U_t^\dagger\right)
 =U_t\Lambda(\rho)U_t^\dagger
 \quad\text{for every real }t,
 \qquad
@@ -53,14 +53,14 @@ For a general reference spectrum the group is the real time-translation group. T
 Let
 
 $$
-D(\rho,\tau)=\frac12\|\rho-\tau\|_1
+D(\rho,\tau)=\frac12\Vert \rho-\tau\Vert _1
 $$
 
 be half trace distance. The actual error is
 
 $$
 \epsilon(\sigma_R,\Lambda;N)
-=D\!\left(
+=D\left(
 \Lambda(\sigma_R\otimes\eta_N),
 \sigma_R\otimes\psi_N
 \right).
@@ -76,10 +76,10 @@ Define
 
 $$
 E_{\min}(N,\delta)
-=\inf\left\{
-\operatorname{Tr}(H_R\sigma_R):
+=\inf\left\lbrace
+\mathrm{Tr}(H_R\sigma_R):
 \epsilon(\sigma_R,\Lambda;N)\le\delta
-\right\},
+\right\rbrace ,
 $$
 
 where the infimum ranges over the allowed reference systems, states and covariant protocols just specified. They may be chosen for the requested $N$ and $\delta$. An infimum need not be attained; the theorem provides finite explicit upper-bound witnesses rather than a claim that a global optimizer exists.
@@ -90,9 +90,9 @@ For every even $N\ge2$ and $0<\delta\le1/8$,
 
 $$
 \boxed{
-\frac{1}{32\sqrt2}\sqrt{\frac N\delta}
+\frac{1}{32\sqrt2}\sqrt{N/\delta}
 \le E_{\min}(N,\delta)+1
-\le3\sqrt{\frac N\delta}.
+\le3\sqrt{N/\delta}.
 }
 $$
 
@@ -100,13 +100,13 @@ The additive one can be removed without changing the uniform regime. In particul
 
 $$
 \boxed{
-\frac1{1024}\sqrt{\frac N\delta}
+\frac1{1024}\sqrt{N/\delta}
 \le E_{\min}(N,\delta)
-\le3\sqrt{\frac N\delta}.
+\le3\sqrt{N/\delta}.
 }
 $$
 
-Consequently $E_{\min}(N,\delta)=\Theta(\sqrt{N/\delta})$ with constants independent of both $N$ and $\delta$ in this domain. This is a joint two-parameter statement, not an exchange of a fixed-$N$ limit with a growing-system limit. Exact return with exact coherent output is impossible at finite $E$, including for an infinite-dimensional reference of finite mean energy.
+Consequently $E_{\min}(N,\delta)=\Theta(\sqrt{N/\delta})$ with constants independent of both $N$ and $\delta$ in this domain. This is a joint two-parameter statement, not an exchange of a fixed $N$ limit with a growing-system limit. Exact return with exact coherent output is impossible at finite $E$, including for an infinite-dimensional reference of finite mean energy.
 
 The [converse](converse.md) proves the lower bounds for arbitrary mixed finite-mean references and arbitrary covariant channels. The [construction](construction.md) supplies a finite ladder with a smooth pure reference and exactly conserving sector rotations. The [sequential protocol](sequential_reuse.md) attains the same order by repeatedly applying **one fixed reference–pair unitary** to fresh copies of $|01\rangle$; its processor depends on the chosen reference size but not on the eventual number of calls. Every previous output remains in the error comparison.
 
@@ -130,8 +130,8 @@ Taking $L=\lceil\sqrt{29N/\delta}\rceil$ gives an allowed finite witness. Since 
 
 $$
 E_L+1=\frac L2
-\le\frac{\sqrt{29}}2\sqrt{\frac N\delta}+\frac12
-<3\sqrt{\frac N\delta}.
+\le\frac{\sqrt{29}}2\sqrt{N/\delta}+\frac12
+<3\sqrt{N/\delta}.
 $$
 
 These constants are sufficient bounds, not optimized prefactors.

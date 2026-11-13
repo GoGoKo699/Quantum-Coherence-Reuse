@@ -3,7 +3,7 @@
 This project determines an optimal reference-energy budget for one specified state-preparation task. A deterministic covariant operation uses an initially independent reference of mean energy $E$ to prepare $N$ coherent qubits and return the reference, with half trace distance at most $\delta$ from the complete product target. For even $N\geq2$ and sufficiently small $\delta$, the optimal mean reference energy scales as
 
 $$
-E_{\min}(N,\delta)=\Theta\!\left(\sqrt{\frac{N}{\delta}}\right).
+E_{\min}(N,\delta)=\Theta\left(\sqrt{(N)/(\delta)}\right).
 $$
 
 The converse includes arbitrary mixed references, nonnegative reference Hamiltonians, finite mean energy without a variance or support bound, and arbitrary deterministic covariant channels. A finite pure ladder reference attains the order through repeated use of one fixed conserving processor on fresh balanced qubit pairs. Each input pair already contains one excitation. The theorem prices the coherent reference, rather than the total energy supplied to the qubits or the physical complexity of the controls.
@@ -53,7 +53,7 @@ $$
 \mathcal R_P(|r\rangle\langle r|)
 =\sum_s |c_s|^2|\phi_{a_s}\rangle\langle\phi_{a_s}|,
 \qquad
-|\phi_a\rangle=\sum_K\sqrt{p_{K-a}}\,|v_K\rangle.
+|\phi_a\rangle=\sum_K\sqrt{p_{K-a}} |v_K\rangle.
 $$
 
 Zero-weight sectors are omitted. A conserving unitary with a supplied sharp system-input energy $a_0$ can produce $|\phi_{a_0}\rangle$ by aligning its input vector with $|v_K\rangle$ within each total-energy sector. For a balanced pair, $a_0=1$. Thus normalized target-sector vectors and the recovery mechanism are not claimed as new conversion principles. The known Petz channel mixes these energy branches; the conserving construction here realizes the branch selected by the precharged input deterministically. No postselection is used. A sharper direct analysis of the Petz channel is compatible with the same upper order; no superiority over its optimized trace-distance performance is asserted.
