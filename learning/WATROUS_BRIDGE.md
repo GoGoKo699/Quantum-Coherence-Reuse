@@ -23,7 +23,7 @@ Read this map together with the [30 project milestones](MILESTONES.md). The mile
 
 ## Notation and normalization
 
-Watrous usually writes vectors as $u$ and their adjoints as $u^*$. Here $|u\rangle$ is the same vector, $\langle u|$ its adjoint, and $|u\rangle\langle u|$ the rank-one density operator $uu^*$. A density operator is positive semidefinite with trace one. The symbols $R$ and $S$ name registers; $\sigma_R$ and $\eta_N$ name their states.
+Watrous usually writes vectors as $u$ and their adjoints as $u^\ast$. Here $|u\rangle$ is the same vector, $\langle u|$ its adjoint, and $|u\rangle\langle u|$ the rank-one density operator $uu^\ast$. A density operator is positive semidefinite with trace one. The symbols $R$ and $S$ name registers; $\sigma_R$ and $\eta_N$ name their states.
 
 | Quantity | Convention used here |
 | --- | --- |
@@ -165,7 +165,13 @@ $$
 
 Then $\varepsilon_L\leq\mathsf H(p,q)$. The profile $p_r\propto\sin^4[\pi(r+1)/L]$ has mean energy $L/2-1$. Its smoothness makes the one-pair lazy-walk change $q-p$ a small second difference. The [boundary-inclusive estimate](../science/construction.md#uniform-sine-profile-estimate) proves $\mathsf H(p,q)=O(L^{-2})$; that estimate, not fidelity notation alone, supplies the useful power of $L$.
 
-For completeness, Hellinger contraction under a classical channel $K$ follows from Cauchy–Schwarz: $\sqrt{(Kp)_i(Kq)_i}\geq\sum_jK_{ij}\sqrt{p_jq_j}$, so $B(Kp,Kq)\geq B(p,q)$. Combining this with the Euclidean triangle inequality gives $\mathsf H(p,P^mp)\leq m\mathsf H(p,Pp)$ for the lazy walk $P$. This connects probability vectors to the collective benchmark; sequential operation still needs the whole-state argument below.
+For completeness, Hellinger contraction under a classical channel $K$ follows from Cauchy–Schwarz:
+
+$$
+\sqrt{(Kp)_i(Kq)_i}\geq\sum_jK_{ij}\sqrt{p_jq_j}.
+$$
+
+Summing gives $B(Kp,Kq)\geq B(p,q)$. Combining this with the Euclidean triangle inequality gives $\mathsf H(p,P^mp)\leq m\mathsf H(p,Pp)$ for the lazy walk $P$. This connects probability vectors to the collective benchmark; sequential operation still needs the whole-state argument below.
 
 ## From contractivity to honest sequential reuse
 

@@ -210,7 +210,7 @@ $E\ge9/(32\pi)>1/16$. Hence $E+1\le17E$. Combining this with (7) gives
 
 $$
 E\ge\frac1{544\sqrt2}\sqrt{\frac N\delta}
->\frac1{1024}\sqrt{\frac N\delta}.
+\gt\frac1{1024}\sqrt{\frac N\delta}.
 $$
 
 The same small-error domain works for all even $N\ge2$. Removing the additive one therefore needs neither an unmentioned large $N$ limit nor a stronger accuracy restriction.
