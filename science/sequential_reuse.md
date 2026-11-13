@@ -22,9 +22,9 @@ $$
 Since $\rho_0=\tau_0$, induction proves
 
 $$
-D\!\left(\rho_m,\sigma_L\otimes|+\rangle\langle+|^{\otimes N}\right)
+D\left(\rho_m,\sigma_L\otimes|+\rangle\langle+|^{\otimes N}\right)
 \leq m\varepsilon_L
-\leq\frac{7N}{\sqrt6}\sin^2\!\frac\pi L
+\leq\frac{7N}{\sqrt6}\sin^2\frac\pi L
 \leq\frac{7\pi^2}{\sqrt6}\frac{N}{L^2}.
 $$
 
@@ -69,7 +69,7 @@ $$
 The diamond norm includes arbitrary external systems, so this bound remains applicable when the reference is correlated with every earlier output. A channel hybrid and the preceding state hybrid give
 
 $$
-D\!\left(\widetilde\rho_m,
+D\left(\widetilde\rho_m,
 \sigma_L\otimes|+\rangle\langle+|^{\otimes N}\right)
 \leq\eta+\sum_{j=1}^m\zeta_j+m\varepsilon_L.
 $$
@@ -77,7 +77,7 @@ $$
 If the return target is the actual prepared state $\widetilde\sigma_L$ rather than the nominal $\sigma_L$, an additional endpoint comparison gives
 
 $$
-D\!\left(\widetilde\rho_m,
+D\left(\widetilde\rho_m,
 \widetilde\sigma_L\otimes|+\rangle\langle+|^{\otimes N}\right)
 \leq2\eta+\sum_{j=1}^m\zeta_j+m\varepsilon_L.
 $$

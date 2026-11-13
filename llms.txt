@@ -21,6 +21,15 @@ For even N≥2, prepare N coherent qubits from fresh |01> pairs while returning 
 - [Bibliography](references/references.bib): primary source identities and versions.
 - [Verification](verification/README.md): runnable finite calculations, outputs and evidential limits.
 
+## Learning route
+
+The sole educational anchor is John Watrous, The Theory of Quantum Information (2018).
+
+- [Learning overview](learning/README.md): entry points and the background/narrative allocation.
+- [Watrous bridge](learning/WATROUS_BRIDGE.md): verified section pointers, notation translations and locally supplied extensions.
+- [Worked tutorial](learning/TUTORIAL.md): physical setup, finite example, converse, construction, reuse and limits.
+- [30 milestones](learning/MILESTONES.md): M01–M12 background/preliminaries and M13–M30 narrative/innovation, with dependencies and source pointers.
+
 ## Essential distinctions
 
 - Reference mean energy is measured above its ground in qubit-gap units; each input pair already supplies one excitation.

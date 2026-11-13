@@ -17,7 +17,7 @@ Prepare the pure state
 $$
 |R_L\rangle=\sum_{r=0}^{L-2}\sqrt{p_r}\,|r\rangle,
 \qquad
-p_r=\frac{8}{3L}\sin^4\!\left(\frac{\pi(r+1)}{L}\right).
+p_r=\frac{8}{3L}\sin^4\left(\frac{\pi(r+1)}{L}\right).
 $$
 
 Set $p_r=0$ outside this range. The trigonometric sums and reflection symmetry give
@@ -97,7 +97,7 @@ The exact one-use error is therefore
 
 $$
 \varepsilon_L=
-D\!\left(U_L(|R_L\rangle\langle R_L|\otimes|01\rangle\langle01|)U_L^\dagger,
+D\left(U_L(|R_L\rangle\langle R_L|\otimes|01\rangle\langle01|)U_L^\dagger,
 |R_L\rangle\langle R_L|\otimes|++\rangle\langle++|\right)
 =\sqrt{1-B(p,q)^2}.
 $$
@@ -176,7 +176,7 @@ The final one-pair guarantee, valid for every integer $L\geq3$, is
 $$
 \boxed{\displaystyle
 \varepsilon_L\leq
-\min\!\left\{1,\sqrt{\frac{98}{3}}\sin^2\!\frac\pi L\right\}.}
+\min\left\{1,\sqrt{\frac{98}{3}}\sin^2\frac\pi L\right\}.}
 $$
 
 The numerical constant is a convenient sufficient bound, not an optimized constant.

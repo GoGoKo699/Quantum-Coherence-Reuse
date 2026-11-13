@@ -35,14 +35,13 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/math-runtime" playwright@1.56.1 mathjax-full@3.2.1
           node "$RUNNER_TEMP/math-runtime/node_modules/playwright/cli.js" install --with-deps chromium
-      - name: Probe representative hosted mathematics
+      - name: Capture all hosted mathematics
         run: |
           export NODE_PATH="$RUNNER_TEMP/math-runtime/node_modules"
-          node verification/hosted_math/probe_hosted_math.cjs \
+          node verification/hosted_math/capture_hosted_math.cjs \
             --root "$GITHUB_WORKSPACE" \
             --repository "$GITHUB_REPOSITORY" \
             --revision "$CAPTURE_REVISION" \
-            --page README.md \
             --output "$RUNNER_TEMP/hosted-math"
       - name: Retain actual captures and comparison reports
         if: always()

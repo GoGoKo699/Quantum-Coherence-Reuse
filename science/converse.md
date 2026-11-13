@@ -144,7 +144,7 @@ Then $t_EE<1/8$, so (4) implies $d_R(t_E)\le1/2$. Also $0<t_E/2\le1/16$. The ele
 
 $$
 s_N(t_E)
-\le\exp\!\left[-\frac{N}{256(E+1)^2}\right].
+\le\exp\left[-\frac{N}{256(E+1)^2}\right].
 $$
 
 Substitution into (2) proves
@@ -152,7 +152,7 @@ Substitution into (2) proves
 $$
 \boxed{
 \delta\ge\frac14
-\left(1-\exp\!\left[-\frac{N}{256(E+1)^2}\right]\right).
+\left(1-\exp\left[-\frac{N}{256(E+1)^2}\right]\right).
 }
 \tag{5}
 $$
@@ -182,7 +182,7 @@ Equation (5) also gives the uniform error form
 $$
 \delta\ge
 \frac{1-e^{-1}}{1024}
-\min\!\left\{1,\frac{N}{(E+1)^2}\right\}.
+\min\left\{1,\frac{N}{(E+1)^2}\right\}.
 $$
 
 Its constants are deliberately loose; no exact optimal prefactor is asserted.

@@ -27,3 +27,21 @@ The direct matrix cases include the smallest allowed ladder, $L=3$, and three-pa
 ## Limits of the evidence
 
 Passing these calculations corroborates the selected finite identities and implementations. It does not prove an asymptotic theorem, certify floating-point results by intervals, optimize constants, synthesize a physical number-selective controller, or validate a hardware noise model. The universal mixed-reference converse is an analytical statement, not an inference from a search over finite examples.
+
+## Learning and navigation checks
+
+Run `python3 verification/check_structure.py` from the repository root. This standard-library script checks relative reader links and source heading fragments, the selected educational-anchor identity, exactly thirty milestone records with required fields and earlier prerequisites, and narrow private-workflow leakage indicators. It inventories every Markdown page for the separate hosted review. These checks do not establish scientific correctness, pedagogical quality, bibliography completeness, or rendered mathematics and visual quality.
+
+## Actual GitHub rendering
+
+The read-only [hosted mathematics workflow](../.github/workflows/hosted-math.yml) checks the exact proposed commit. Its [collector](hosted_math/capture_hosted_math.cjs) opens every tracked Markdown page on GitHub at widths 1440 and 760, comparing actual accessible MathML with the source expression structure and checking bounded geometry. Captured reports, HTML and full-page screenshots are retained as workflow artifacts for fourteen days. A passing automated comparison still requires visual inspection of equations, tables and navigation. It supplies no scientific proof or guarantee about future GitHub rendering.
+
+The capture runtime uses Node.js 22, Playwright 1.56.1 and MathJax 3.2.1; these browser dependencies are installed outside the source tree. A local invocation with the same dependencies is:
+
+```bash
+NODE_PATH=/absolute/capture-runtime/node_modules node verification/hosted_math/capture_hosted_math.cjs \
+  --root /absolute/repository --repository GoGoKo699/Quantum-Coherence-Reuse \
+  --revision FULL_COMMIT_SHA --output /absolute/new-capture-directory
+```
+
+Use a new output directory and an actual full commit SHA. A [single-page probe](hosted_math/probe_hosted_math.cjs) with exactly one `--page` is an early diagnostic, not a complete review. Failed captures remain diagnostic evidence and do not become passing evidence when a later source revision is repaired.

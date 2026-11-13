@@ -37,7 +37,7 @@ The reference state is supplied and known, and is initially independent of the q
 An allowed global protocol is a completely positive trace-preserving map $\Lambda$ on $RS$ satisfying time-translation covariance:
 
 $$
-\Lambda\!\left(U_t\rho U_t^\dagger\right)
+\Lambda\left(U_t\rho U_t^\dagger\right)
 =U_t\Lambda(\rho)U_t^\dagger
 \quad\text{for every real }t,
 \qquad
@@ -60,7 +60,7 @@ be half trace distance. The actual error is
 
 $$
 \epsilon(\sigma_R,\Lambda;N)
-=D\!\left(
+=D\left(
 \Lambda(\sigma_R\otimes\eta_N),
 \sigma_R\otimes\psi_N
 \right).
