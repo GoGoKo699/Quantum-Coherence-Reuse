@@ -171,7 +171,7 @@ For $0\lt \delta\lt 1/4$, rearranging (5) gives
 
 $$
 E+1\ge
-\sqrt{\frac{N}{256[-\ln(1-4\delta)]}}.
+\sqrt{(N)/(256[-\ln(1-4\delta)])}.
 $$
 
 When $\delta\le1/8$, the inequality
@@ -180,7 +180,7 @@ $-\ln(1-4\delta)\le4\delta/(1-4\delta)\le8\delta$ yields
 **(7)**
 
 $$
-E+1\ge\frac1{32\sqrt2}\sqrt{\frac N\delta}.
+E+1\ge\frac1{32\sqrt2}\sqrt{N/\delta}.
 $$
 
 Every admissible witness obeys this bound, so its infimum obeys it as well. This proves the lower half of the first theorem in [the model](model.md#uniform-theorem).
@@ -217,8 +217,8 @@ In particular, $\delta\le1/8$ implies
 $E\ge9/(32\pi)>1/16$. Hence $E+1\le17E$. Combining this with (7) gives
 
 $$
-E\ge\frac1{544\sqrt2}\sqrt{\frac N\delta}
-\gt\frac1{1024}\sqrt{\frac N\delta}.
+E\ge\frac1{544\sqrt2}\sqrt{N/\delta}
+\gt\frac1{1024}\sqrt{N/\delta}.
 $$
 
 The same small-error domain works for all even $N\ge2$. Removing the additive one therefore needs neither an unmentioned large $N$ limit nor a stronger accuracy restriction.

@@ -43,6 +43,10 @@ jobs:
             --repository "$GITHUB_REPOSITORY" \
             --revision "$CAPTURE_REVISION" \
             --output "$RUNNER_TEMP/hosted-math"
+      - name: Capture clean opening viewports
+        run: |
+          export NODE_PATH="$RUNNER_TEMP/math-runtime/node_modules"
+          node verification/hosted_math/capture_openings.cjs "$RUNNER_TEMP/hosted-math"
       - name: Retain actual captures and comparison reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

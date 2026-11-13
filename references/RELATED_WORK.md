@@ -3,7 +3,7 @@
 This project determines an optimal reference-energy budget for one specified state-preparation task. A deterministic covariant operation uses an initially independent reference of mean energy $E$ to prepare $N$ coherent qubits and return the reference, with half trace distance at most $\delta$ from the complete product target. For even $N\geq2$ and sufficiently small $\delta$, the optimal mean reference energy scales as
 
 $$
-E_{\min}(N,\delta)=\Theta\left(\sqrt{\frac{N}{\delta}}\right).
+E_{\min}(N,\delta)=\Theta\left(\sqrt{(N)/(\delta)}\right).
 $$
 
 The converse includes arbitrary mixed references, nonnegative reference Hamiltonians, finite mean energy without a variance or support bound, and arbitrary deterministic covariant channels. A finite pure ladder reference attains the order through repeated use of one fixed conserving processor on fresh balanced qubit pairs. Each input pair already contains one excitation. The theorem prices the coherent reference, rather than the total energy supplied to the qubits or the physical complexity of the controls.

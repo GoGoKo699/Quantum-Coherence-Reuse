@@ -176,7 +176,7 @@ The final one-pair guarantee, valid for every integer $L\geq3$, is
 $$
 \boxed{\displaystyle
 \varepsilon_L\leq
-\min\left\lbrace 1,\sqrt{\frac{98}{3}}\sin^2\frac\pi L\right\rbrace .}
+\min\left\lbrace 1,\sqrt{(98)/(3)}\sin^2\frac\pi L\right\rbrace .}
 $$
 
 The numerical constant is a convenient sufficient bound, not an optimized constant.

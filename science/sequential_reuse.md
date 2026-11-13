@@ -37,7 +37,7 @@ The proof allows the actual reference to become correlated with earlier outputs.
 For any $0<\delta\leq1$, choose
 
 $$
-L=\left\lceil\sqrt{\frac{29N}{\delta}}\right\rceil.
+L=\left\lceil\sqrt{(29N)/(\delta)}\right\rceil.
 $$
 
 For even $N\geq2$, this choice satisfies $L\geq3$ and gives global trace error at most $\delta$. The initial reference mean excitation is
@@ -45,7 +45,7 @@ For even $N\geq2$, this choice satisfies $L\geq3$ and gives global trace error a
 $$
 E_L=\frac L2-1,
 \qquad
-E_L+1\leq\frac12\sqrt{\frac{29N}{\delta}}+\frac12.
+E_L+1\leq\frac12\sqrt{(29N)/(\delta)}+\frac12.
 $$
 
 Together with the [mean-energy converse](converse.md), this establishes the stated $\Theta(\sqrt{N/\delta})$ reference-energy law for small $\delta$. The resource is the reference's initial mean energy above its ground state. The $N/2$ excitation initially supplied in the qubit register is separate. Neither the reference nor the total preparation energy is zero cost.

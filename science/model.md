@@ -90,9 +90,9 @@ For every even $N\ge2$ and $0<\delta\le1/8$,
 
 $$
 \boxed{
-\frac{1}{32\sqrt2}\sqrt{\frac N\delta}
+\frac{1}{32\sqrt2}\sqrt{N/\delta}
 \le E_{\min}(N,\delta)+1
-\le3\sqrt{\frac N\delta}.
+\le3\sqrt{N/\delta}.
 }
 $$
 
@@ -100,9 +100,9 @@ The additive one can be removed without changing the uniform regime. In particul
 
 $$
 \boxed{
-\frac1{1024}\sqrt{\frac N\delta}
+\frac1{1024}\sqrt{N/\delta}
 \le E_{\min}(N,\delta)
-\le3\sqrt{\frac N\delta}.
+\le3\sqrt{N/\delta}.
 }
 $$
 
@@ -130,8 +130,8 @@ Taking $L=\lceil\sqrt{29N/\delta}\rceil$ gives an allowed finite witness. Since 
 
 $$
 E_L+1=\frac L2
-\le\frac{\sqrt{29}}2\sqrt{\frac N\delta}+\frac12
-<3\sqrt{\frac N\delta}.
+\le\frac{\sqrt{29}}2\sqrt{N/\delta}+\frac12
+<3\sqrt{N/\delta}.
 $$
 
 These constants are sufficient bounds, not optimized prefactors.

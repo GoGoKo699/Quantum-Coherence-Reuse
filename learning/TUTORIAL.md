@@ -250,7 +250,7 @@ At the supported grid points its absolute value is at most $14a\sin^2x$. Dividin
 $$
 \mathsf H(p,q)^2\leq\frac{98}{3}\sin^4\frac\pi L,
 \qquad
-\varepsilon_L\leq\sqrt{\frac{98}{3}}\sin^2\frac\pi L.
+\varepsilon_L\leq\sqrt{(98)/(3)}\sin^2\frac\pi L.
 $$
 
 The centered charge balance cancels first-order drift. The smooth profile also controls the finite boundaries. Together they give a full joint error of order $L^{-2}$, rather than merely small individual output errors.
@@ -309,7 +309,7 @@ Set $L=4$. There are three reference energies, zero, one, and two, with
 
 $$
 |R_4\rangle=\frac1{\sqrt6}|0\rangle+
-\sqrt{\frac23}|1\rangle+\frac1{\sqrt6}|2\rangle.
+\sqrt{2/3}|1\rangle+\frac1{\sqrt6}|2\rangle.
 $$
 
 Its mean reference energy is one. After centering the input pair's charge at one, the initial and desired sector probabilities are
@@ -324,7 +324,7 @@ The two outer target sectors have no initial weight. A conserving unitary cannot
 At total charge one, the occupied input vector $|0,01\rangle$ is mapped to
 
 $$
-|v_1\rangle=\sqrt{\frac23}|1,00\rangle+
+|v_1\rangle=\sqrt{2/3}|1,00\rangle+
 \frac1{\sqrt6}|0,01\rangle+
 \frac1{\sqrt6}|0,10\rangle.
 $$
@@ -334,8 +334,8 @@ Every term has total excitation one. At total charge two, $|1,01\rangle$ is mapp
 $$
 \begin{aligned}
 |v_2\rangle={}&\frac1{\sqrt{10}}|0,11\rangle
-+\sqrt{\frac25}|1,01\rangle\\
-&+\sqrt{\frac25}|1,10\rangle
++\sqrt{2/5}|1,01\rangle\\
+&+\sqrt{2/5}|1,10\rangle
 +\frac1{\sqrt{10}}|2,00\rangle.
 \end{aligned}
 $$
@@ -345,7 +345,7 @@ The charge-three sector follows by reflection and qubit complementation. Househo
 The exact overlap is the sum over the three occupied sectors:
 
 $$
-B=\frac1{\sqrt6}+\sqrt{\frac5{18}}
+B=\frac1{\sqrt6}+\sqrt{5/18}
 \approx0.935295,
 \qquad
 \varepsilon_4=\sqrt{1-B^2}\approx0.353870.

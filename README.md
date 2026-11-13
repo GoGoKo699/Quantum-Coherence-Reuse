@@ -9,7 +9,7 @@ Each fresh qubit pair starts in $|01\rangle$. The same energy-conserving process
 Let $N\geq2$ be even and let $0<\delta\leq1/8$ be the allowed half trace distance from the complete ideal product. In units of the qubit energy gap, the minimum initial reference mean energy obeys
 
 $$
-\boxed{\displaystyle E_{\min}(N,\delta)=\Theta\left(\sqrt{\frac{N}{\delta}}\right).}
+\boxed{\displaystyle E_{\min}(N,\delta)=\Theta\left(\sqrt{(N)/(\delta)}\right).}
 $$
 
 The constants are uniform in $N$ and $\delta$ in this domain. The [precise theorem](science/model.md) distinguishes the unrestricted covariant optimization from the attaining sequential architecture.
