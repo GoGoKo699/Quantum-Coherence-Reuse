@@ -143,7 +143,7 @@ $$
 
 The pure-state formula remains a two-dimensional calculation even when the ambient space is infinite. Contractivity on Hermitian trace-class differences follows directly from their positive and negative parts: a positive trace-preserving map sends $X_+-X_-$ to a difference whose trace norm is at most $\mathrm{Tr}X_++\mathrm{Tr}X_-=\Vert X\Vert _1$. These observations supply the extension used here. The purification is a proof device, not a free processor input or a system that the task requires to return.
 
-Choosing $t=1/[8(E+1)]$ keeps the reference orbit distance at most $1/2$; the target orbit has $s_N(t)\leq e^{-Nt^2/4}$. Substitution gives the [explicit lower bound](../science/converse.md#4-explicit-finite-energy-lower-bound). A separate constant-energy floor removes the additive one uniformly. The final theorem concerns every even $N\geq2$ and $0<\delta\leq1/8$, not only one fixed-$N$ limit.
+Choosing $t=1/[8(E+1)]$ keeps the reference orbit distance at most $1/2$; the target orbit has $s_N(t)\leq e^{-Nt^2/4}$. Substitution gives the [explicit lower bound](../science/converse.md#4-explicit-finite-energy-lower-bound). A separate constant-energy floor removes the additive one uniformly. The final theorem concerns every even $N\geq2$ and $0<\delta\leq1/8$, not only one fixed $N$ limit.
 
 ## From spectral blocks and fidelity to an attaining processor
 

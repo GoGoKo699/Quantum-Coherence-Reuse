@@ -213,7 +213,7 @@ E\ge\frac1{544\sqrt2}\sqrt{\frac N\delta}
 >\frac1{1024}\sqrt{\frac N\delta}.
 $$
 
-The same small-error domain works for all even $N\ge2$. Removing the additive one therefore needs neither an unmentioned large-$N$ limit nor a stronger accuracy restriction.
+The same small-error domain works for all even $N\ge2$. Removing the additive one therefore needs neither an unmentioned large $N$ limit nor a stronger accuracy restriction.
 
 ## 6. Scope of the converse
 

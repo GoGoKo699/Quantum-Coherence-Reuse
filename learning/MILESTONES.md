@@ -362,7 +362,7 @@ Throughout, $N\ge2$ is even, qubit excitation gaps equal one, and the main unifo
 
 **Central question:** What does the result add once its prior foundations, complete error contract and costs are all stated?
 
-**Understanding target:** Explain the complete story: a mean-energy-limited reference cannot freely add the target's orbit information; a finite smooth reference and repeated balanced-pair processor attain the matching order; and the global output budget is of order $\delta E^2$ in its nontrivial regime. Retain the even-$N$, small-error, separately paid input-energy and control-scope qualifications. Credit catalytic coherence, quadratic reference longevity, correlation warnings and Petz recovery as inherited foundations rather than new principles.
+**Understanding target:** Explain the complete story: a mean-energy-limited reference cannot freely add the target's orbit information; a finite smooth reference and repeated balanced-pair processor attain the matching order; and the global output budget is of order $\delta E^2$ in its nontrivial regime. Retain the even $N$, small-error, separately paid input-energy and control-scope qualifications. Credit catalytic coherence, quadratic reference longevity, correlation warnings and Petz recovery as inherited foundations rather than new principles.
 
 **Dependencies and story role:** Dependencies: M12, M17, M23, M26, M27, M28 and M29. Story role: Integrates the entire narrative into a scientific conclusion whose significance and limits can be explained together.
 

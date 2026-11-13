@@ -10,7 +10,7 @@ The [uniform theorem](model.md) optimizes the initial mean energy of a supplied 
 | Initial qubit state | Known $|01\rangle^{\otimes N/2}$; its $N/2$ excitations are supplied separately |
 | Reference state | Known and initially independent; all initially supplied asymmetry is included in $R$ |
 | Charged reference energy | $E=\mathrm{Tr}(H_R\sigma_R)$ above the reference spectral infimum |
-| Error | Half trace distance to the same reference tensored with the complete $N$-qubit product target |
+| Error | Half trace distance to the same reference tensored with the complete $N$ qubit product target |
 | Other ancillary states | Invariant under their own time translations; no free coherent phase standard |
 | Converse controls | Arbitrary time-translation-covariant CPTP protocols, with unrestricted complexity |
 | Attaining controls | Repeated identical exactly conserving unitary on the reference and one fresh balanced qubit pair |

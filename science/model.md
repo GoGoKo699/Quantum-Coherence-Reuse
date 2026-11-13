@@ -106,7 +106,7 @@ $$
 }
 $$
 
-Consequently $E_{\min}(N,\delta)=\Theta(\sqrt{N/\delta})$ with constants independent of both $N$ and $\delta$ in this domain. This is a joint two-parameter statement, not an exchange of a fixed-$N$ limit with a growing-system limit. Exact return with exact coherent output is impossible at finite $E$, including for an infinite-dimensional reference of finite mean energy.
+Consequently $E_{\min}(N,\delta)=\Theta(\sqrt{N/\delta})$ with constants independent of both $N$ and $\delta$ in this domain. This is a joint two-parameter statement, not an exchange of a fixed $N$ limit with a growing-system limit. Exact return with exact coherent output is impossible at finite $E$, including for an infinite-dimensional reference of finite mean energy.
 
 The [converse](converse.md) proves the lower bounds for arbitrary mixed finite-mean references and arbitrary covariant channels. The [construction](construction.md) supplies a finite ladder with a smooth pure reference and exactly conserving sector rotations. The [sequential protocol](sequential_reuse.md) attains the same order by repeatedly applying **one fixed reference–pair unitary** to fresh copies of $|01\rangle$; its processor depends on the chosen reference size but not on the eventual number of calls. Every previous output remains in the error comparison.
 

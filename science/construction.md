@@ -60,11 +60,11 @@ and the normalized vector
 $$
 |v_\ell\rangle=
 \frac{1}{2\sqrt{q_{\ell-1}}}
-\sum_{\substack{r,b_1,b_2\\r+b_1+b_2=\ell}}
+\sum_{r+b_1+b_2=\ell}
 \sqrt{p_r} |r,b_1b_2\rangle.
 $$
 
-Its denominator is nonzero because $p_{\ell-1}>0$. This is the normalized projection of $|R_L\rangle|++\rangle$ onto $\mathcal H_\ell$.
+The sum ranges over $0\le r\le L-2$ and $b_1,b_2\in\lbrace0,1\rbrace$ satisfying the displayed charge constraint. Its denominator is nonzero because $p_{\ell-1}>0$. This is the normalized projection of $|R_L\rangle|++\rangle$ onto $\mathcal H_\ell$.
 
 Choose a real Householder block
 
