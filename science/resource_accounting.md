@@ -9,7 +9,7 @@ The [uniform theorem](model.md) optimizes the initial mean energy of a supplied 
 | Output qubits | $N$ unit-gap qubits, with even $N\ge2$ |
 | Initial qubit state | Known $|01\rangle^{\otimes N/2}$; its $N/2$ excitations are supplied separately |
 | Reference state | Known and initially independent; all initially supplied asymmetry is included in $R$ |
-| Charged reference energy | $E=\operatorname{Tr}(H_R\sigma_R)$ above the reference spectral infimum |
+| Charged reference energy | $E=\mathrm{Tr}(H_R\sigma_R)$ above the reference spectral infimum |
 | Error | Half trace distance to the same reference tensored with the complete $N$-qubit product target |
 | Other ancillary states | Invariant under their own time translations; no free coherent phase standard |
 | Converse controls | Arbitrary time-translation-covariant CPTP protocols, with unrestricted complexity |
@@ -33,7 +33,7 @@ The sublinear dependence on $N$ at fixed error concerns the **reference term**. 
 For the closed-unitary upper bound, total energy is conserved exactly. The returned reference need only be close in trace distance, not identical in mean energy. Nevertheless the bounded qubit observable obeys
 
 $$
-\left|\operatorname{Tr}(Q_N\omega_S)-\frac N2\right|
+\left|\mathrm{Tr}(Q_N\omega_S)-\frac N2\right|
 \le N\delta,
 $$
 
@@ -48,7 +48,7 @@ The explicit upper bound uses a particular finite ladder:
 $$
 \dim R=L-1,
 \qquad
-\operatorname{spec}(H_R)=\{0,1,\ldots,L-2\},
+\mathrm{spec}(H_R)=\lbrace 0,1,\ldots,L-2\rbrace ,
 \qquad
 E_L=\frac L2-1.
 $$

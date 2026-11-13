@@ -63,7 +63,7 @@ $$
 At use $j$, suppose the implemented pair channel $\widetilde{\mathcal U}_j$ differs from the ideal $\mathcal U_L(\cdot)=U_L(\cdot)U_L^\dagger$ by
 
 $$
-\frac12\|\widetilde{\mathcal U}_j-\mathcal U_L\|_\diamond\leq\zeta_j.
+\frac12\Vert \widetilde{\mathcal U}_j-\mathcal U_L\Vert _\diamond\leq\zeta_j.
 $$
 
 The diamond norm includes arbitrary external systems, so this bound remains applicable when the reference is correlated with every earlier output. A channel hybrid and the preceding state hybrid give
@@ -89,7 +89,7 @@ The stability bound also applies to noncovariant implementation errors as an app
 If preparation errors stay within the finite ladder, the mean-energy deviation obeys
 
 $$
-|\operatorname{Tr}H_R(\widetilde\sigma_L-\sigma_L)|
+|\mathrm{Tr}H_R(\widetilde\sigma_L-\sigma_L)|
 \leq(L-2)\eta.
 $$
 

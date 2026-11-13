@@ -27,11 +27,11 @@ Watrous usually writes vectors as $u$ and their adjoints as $u^*$. Here $|u\rang
 
 | Quantity | Convention used here |
 | --- | --- |
-| State distance | $D(\rho,\tau)=\tfrac12\|\rho-\tau\|_1$; this is half the raw norm |
-| Book fidelity | $F_{\mathrm W}(\rho,\tau)=\|\sqrt\rho\sqrt\tau\|_1$, the unsquared or root fidelity of Definition 3.11 |
+| State distance | $D(\rho,\tau)=\tfrac12\Vert \rho-\tau\Vert _1$; this is half the raw norm |
+| Book fidelity | $F_{\mathrm W}(\rho,\tau)=\Vert \sqrt\rho\sqrt\tau\Vert _1$, the unsquared or root fidelity of Definition 3.11 |
 | Squared fidelity, when used | $F_{\mathrm{sq}}=F_{\mathrm W}^2$; it is a different convention, not a second distance |
-| Channel error | $\tfrac12\|\widetilde\Phi-\Phi\|_\diamond$; Watrous's completely bounded trace norm, written $\lVert\lVert\lVert\cdot\rVert\rVert\rVert_1$, is the unhalved diamond norm |
-| Energy | $E=\operatorname{Tr}(H_R\sigma_R)$ with $H_R\geq0$, measured above its spectral infimum in units of the qubit gap |
+| Channel error | $\tfrac12\Vert \widetilde\Phi-\Phi\Vert _\diamond$; Watrous's completely bounded trace norm, written $\lVert\lVert\lVert\cdot\rVert\rVert\rVert_1$, is the unhalved diamond norm |
+| Energy | $E=\mathrm{Tr}(H_R\sigma_R)$ with $H_R\geq0$, measured above its spectral infimum in units of the qubit gap |
 
 For normalized pure vectors,
 
@@ -98,7 +98,7 @@ $$
 In each resulting classical block, the operator $p_i a-q_i b$ acts on at most a two-dimensional space. Its trace and determinant give
 
 $$
-\|p_i a-q_i b\|_1
+\Vert p_i a-q_i b\Vert _1
 =\sqrt{(p_i-q_i)^2+4p_iq_i(1-s)}.
 $$
 
@@ -124,11 +124,11 @@ This connects Chapter 3's discrimination tools to the quantitative problem: inde
 
 Watrous formulates the book using finite-dimensional complex Euclidean spaces. The attaining ladder here is finite and fits that framework. The converse deliberately permits infinite-dimensional trace-class reference states and unbounded positive Hamiltonians, so the relevant extension is proved here rather than attributed to the book.
 
-For a self-adjoint $H_R\geq0$, its spectral projections define a probability measure $\mu$ through the state $\sigma_R$. Finite mean energy means $\int x\,d\mu(x)=E<\infty$. Therefore
+For a self-adjoint $H_R\geq0$, its spectral projections define a probability measure $\mu$ through the state $\sigma_R$. Finite mean energy means $\int x d\mu(x)=E<\infty$. Therefore
 
 $$
-A(t)=\operatorname{Tr}(\sigma_Re^{-itH_R})
-=\int e^{-itx}\,d\mu(x),
+A(t)=\mathrm{Tr}(\sigma_Re^{-itH_R})
+=\int e^{-itx} d\mu(x),
 \qquad |1-A(t)|\leq |t|E.
 $$
 
@@ -141,7 +141,7 @@ d_R(t)\leq\sqrt{1-|A(t)|^2}
 \leq\sqrt{2|t|E}\qquad(|t|E\leq1).
 $$
 
-The pure-state formula remains a two-dimensional calculation even when the ambient space is infinite. Contractivity on Hermitian trace-class differences follows directly from their positive and negative parts: a positive trace-preserving map sends $X_+-X_-$ to a difference whose trace norm is at most $\operatorname{Tr}X_++\operatorname{Tr}X_-=\|X\|_1$. These observations supply the extension used here. The purification is a proof device, not a free processor input or a system that the task requires to return.
+The pure-state formula remains a two-dimensional calculation even when the ambient space is infinite. Contractivity on Hermitian trace-class differences follows directly from their positive and negative parts: a positive trace-preserving map sends $X_+-X_-$ to a difference whose trace norm is at most $\mathrm{Tr}X_++\mathrm{Tr}X_-=\Vert X\Vert _1$. These observations supply the extension used here. The purification is a proof device, not a free processor input or a system that the task requires to return.
 
 Choosing $t=1/[8(E+1)]$ keeps the reference orbit distance at most $1/2$; the target orbit has $s_N(t)\leq e^{-Nt^2/4}$. Substitution gives the [explicit lower bound](../science/converse.md#4-explicit-finite-energy-lower-bound). A separate constant-energy floor removes the additive one uniformly. The final theorem concerns every even $N\geq2$ and $0<\delta\leq1/8$, not only one fixed-$N$ limit.
 
@@ -159,7 +159,7 @@ $$
 Here $B$ is the root fidelity of the corresponding diagonal states. Define the unnormalized Hellinger distance by
 
 $$
-\mathsf H(p,q)=\|\sqrt p-\sqrt q\|_2,
+\mathsf H(p,q)=\Vert \sqrt p-\sqrt q\Vert _2,
 \qquad \mathsf H(p,q)^2=2(1-B(p,q)).
 $$
 
@@ -193,7 +193,7 @@ Scoring return to the actual prepared reference rather than the nominal one adds
 On the finite ladder, $0\leq H_R\leq(L-2)I$. The same measurement-distance interpretation gives
 
 $$
-|\operatorname{Tr}[H_R(\rho-\tau)]|
+|\mathrm{Tr}[H_R(\rho-\tau)]|
 \leq(L-2)D(\rho,\tau).
 $$
 

@@ -27,7 +27,7 @@ $$
 The reference $R$ has a self-adjoint Hamiltonian $H_R\ge0$, with energy origin at its spectral infimum, and an initial density operator $\sigma_R$ satisfying
 
 $$
-E=\operatorname{Tr}(H_R\sigma_R)<\infty.
+E=\mathrm{Tr}(H_R\sigma_R)<\infty.
 $$
 
 The reference state is supplied and known, and is initially independent of the qubits. The converse permits finite or infinite-dimensional references, arbitrary degeneracies, sparse or continuous spectra, mixed states, and energy distributions with infinite second moment. There is no requirement that zero be an eigenvalue. Ordinary trace-class quantum states and their spectral energy distributions are meant; no assertion about general operator-algebraic states is needed.
@@ -53,7 +53,7 @@ For a general reference spectrum the group is the real time-translation group. T
 Let
 
 $$
-D(\rho,\tau)=\frac12\|\rho-\tau\|_1
+D(\rho,\tau)=\frac12\Vert \rho-\tau\Vert _1
 $$
 
 be half trace distance. The actual error is
@@ -76,10 +76,10 @@ Define
 
 $$
 E_{\min}(N,\delta)
-=\inf\left\{
-\operatorname{Tr}(H_R\sigma_R):
+=\inf\left\lbrace
+\mathrm{Tr}(H_R\sigma_R):
 \epsilon(\sigma_R,\Lambda;N)\le\delta
-\right\},
+\right\rbrace ,
 $$
 
 where the infimum ranges over the allowed reference systems, states and covariant protocols just specified. They may be chosen for the requested $N$ and $\delta$. An infimum need not be attained; the theorem provides finite explicit upper-bound witnesses rather than a claim that a global optimizer exists.

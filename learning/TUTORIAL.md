@@ -40,7 +40,7 @@ Route: [M04–M05](MILESTONES.md).
 Let $R$ be the reference register, $H_R$ its Hamiltonian above its spectral infimum, and $\sigma_R$ its initial density operator. Thus $H_R\geq0$, and the charged resource is its mean energy
 
 $$
-E=\operatorname{Tr}(H_R\sigma_R)<\infty.
+E=\mathrm{Tr}(H_R\sigma_R)<\infty.
 $$
 
 The reference starts independently of the qubits. The qubit charge operator $Q_N$ adds their individual excitations. A time shift $t$ rotates a joint state by
@@ -66,10 +66,10 @@ A unitary commuting with total excitation gives a covariant channel. General cov
 
 Route: [M06–M08](MILESTONES.md).
 
-Use half trace distance, where $\|X\|_1$ is the sum of the singular values of $X$:
+Use half trace distance, where $\Vert X\Vert _1$ is the sum of the singular values of $X$:
 
 $$
-D(\rho,\tau)=\tfrac12\|\rho-\tau\|_1.
+D(\rho,\tau)=\tfrac12\Vert \rho-\tau\Vert _1.
 $$
 
 For equally likely alternatives, the best discrimination success probability is $(1+D)/2$. Thus $D\leq\delta$ means that every measurement event probability changes by at most $\delta$, including measurements on many registers together.
@@ -79,7 +79,7 @@ Three properties make this distance useful through a protocol: channels cannot i
 Watrous uses **root fidelity**,
 
 $$
-F_{\mathrm W}(\rho,\tau)=\|\sqrt\rho\sqrt\tau\|_1.
+F_{\mathrm W}(\rho,\tau)=\Vert \sqrt\rho\sqrt\tau\Vert _1.
 $$
 
 Some sources instead call $F_{\mathrm W}^2$ fidelity. For pure vectors $|a\rangle,|b\rangle$,
@@ -142,7 +142,7 @@ $$
 To see its source, perform the optimal Helstrom measurement on the first register. Let its outcome probabilities be $p_i,q_i$, so that $\sum_i\min(p_i,q_i)=1-d$. In each retained outcome block,
 
 $$
-\|p_i a-q_i b\|_1
+\Vert p_i a-q_i b\Vert _1
 =\sqrt{(p_i-q_i)^2+4p_iq_i(1-s)}.
 $$
 
@@ -159,8 +159,8 @@ The ideal outputs would add time-translation information; a covariant source can
 Only mean energy is needed to control the reference side. Let $\mu$ be the spectral energy distribution of $H_R$ in $\sigma_R$. Its characteristic function obeys
 
 $$
-A(t)=\int e^{-itx}\,d\mu(x),
-\qquad |1-A(t)|\leq |t|\int x\,d\mu(x)=|t|E.
+A(t)=\int e^{-itx} d\mu(x),
+\qquad |1-A(t)|\leq |t|\int x d\mu(x)=|t|E.
 $$
 
 The inequality integrates $|1-e^{-itx}|\leq|t|x$; it never differentiates the characteristic function or invokes a second moment. A mathematical purification has overlap $A(t)$ with its rotated vector. Pure-state distance and partial-trace contractivity then imply

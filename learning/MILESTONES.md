@@ -72,7 +72,7 @@ Throughout, $N\ge2$ is even, qubit excitation gaps equal one, and the main unifo
 
 **Central question:** What can an observer detect when two quantum states are close?
 
-**Understanding target:** Use half trace distance $D(\rho,\tau)=\|\rho-\tau\|_1/2$ and its equal-prior Helstrom interpretation. Explain the factor of two and why a joint measurement is allowed when interpreting this metric.
+**Understanding target:** Use half trace distance $D(\rho,\tau)=\Vert \rho-\tau\Vert _1/2$ and its equal-prior Helstrom interpretation. Explain the factor of two and why a joint measurement is allowed when interpreting this metric.
 
 **Dependencies and story role:** Dependencies: M01 and M02. Story role: Supplies the operational accuracy criterion before comparing actual and ideal outputs.
 
@@ -108,7 +108,7 @@ Throughout, $N\ge2$ is even, qubit excitation gaps equal one, and the main unifo
 
 **Central question:** What does a finite first energy moment control when the reference has rare high-energy components?
 
-**Understanding target:** Interpret $E=\operatorname{Tr}(H_R\sigma_R)$ above a nonnegative spectral lower bound. Distinguish mean energy from dimension, support width and variance, and recognize that finite mean need not imply finite second moment.
+**Understanding target:** Interpret $E=\mathrm{Tr}(H_R\sigma_R)$ above a nonnegative spectral lower bound. Distinguish mean energy from dimension, support width and variance, and recognize that finite mean need not imply finite second moment.
 
 **Dependencies and story role:** Dependencies: M03 and M04. Story role: Fixes the resource constraint before a convenient finite ladder is introduced.
 
@@ -194,7 +194,7 @@ Throughout, $N\ge2$ is even, qubit excitation gaps equal one, and the main unifo
 
 **Central question:** Why cannot a rare, arbitrarily high-energy tail defeat the converse?
 
-**Understanding target:** Follow $|1-\operatorname{Tr}(\sigma_Re^{-itH_R})|\le |t|E$ and the purification-based bound $d_R(t)\le\sqrt{2|t|E}$ in its stated domain. Explain why neither a finite variance nor return of that mathematical purification is assumed.
+**Understanding target:** Follow $|1-\mathrm{Tr}(\sigma_Re^{-itH_R})|\le |t|E$ and the purification-based bound $d_R(t)\le\sqrt{2|t|E}$ in its stated domain. Explain why neither a finite variance nor return of that mathematical purification is assumed.
 
 **Dependencies and story role:** Dependencies: M08, M09 and M14. Story role: Supplies the reference side of the comparison for the broadest allowed input class.
 

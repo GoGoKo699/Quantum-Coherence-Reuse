@@ -33,7 +33,7 @@ $$
 The measured product states are block diagonal in $i$. For each block, the two weighted pure states satisfy
 
 $$
-\|p_i a-q_i b\|_1
+\Vert p_i a-q_i b\Vert _1
 =\sqrt{(p_i-q_i)^2+4p_iq_i(1-s)}.
 $$
 
@@ -77,13 +77,14 @@ $$
 The triangle inequality followed by (1) yields
 
 $$
-\begin{aligned}
 D(\sigma_R\otimes\psi_N,\sigma_t\otimes\psi_t)
-&\le d_R(t)+2\delta,\\
-\boxed{\quad
-2\delta
-&\ge[1-s_N(t)][1-d_R(t)],\quad}
-\end{aligned}
+\le d_R(t)+2\delta.
+$$
+
+Therefore
+
+$$
+\boxed{2\delta\ge[1-s_N(t)][1-d_R(t)].}
 \tag{2}
 $$
 
@@ -99,13 +100,13 @@ Only the initial reference is rotated in the input comparison. No unknown parame
 
 ## 3. A first-moment reference-orbit estimate
 
-Let $H_R\ge0$ and $E=\operatorname{Tr}(H_R\sigma_R)<\infty$. The spectral theorem defines a probability measure $\mu$ on $[0,\infty)$ such that
+Let $H_R\ge0$ and $E=\mathrm{Tr}(H_R\sigma_R)<\infty$. The spectral theorem defines a probability measure $\mu$ on $[0,\infty)$ such that
 
 $$
-A(t)=\operatorname{Tr}(\sigma_Re^{-itH_R})
-=\int_0^\infty e^{-itx}\,d\mu(x),
+A(t)=\mathrm{Tr}(\sigma_Re^{-itH_R})
+=\int_0^\infty e^{-itx} d\mu(x),
 \qquad
-\int_0^\infty x\,d\mu(x)=E.
+\int_0^\infty x d\mu(x)=E.
 $$
 
 Because $|1-e^{-itx}|\le |t|x$,
@@ -182,7 +183,7 @@ Equation (5) also gives the uniform error form
 $$
 \delta\ge
 \frac{1-e^{-1}}{1024}
-\min\left\{1,\frac{N}{(E+1)^2}\right\}.
+\min\left\lbrace 1,\frac{N}{(E+1)^2}\right\rbrace .
 $$
 
 Its constants are deliberately loose; no exact optimal prefactor is asserted.
