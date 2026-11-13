@@ -1,0 +1,281 @@
+{
+  "passed": true,
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "profile_checks": {
+    "L_first": 3,
+    "L_last": 129,
+    "profiles_tested": 127,
+    "maximum_normalization_error": 2.220446049250313e-16,
+    "maximum_mean_excitation_error": 1.4210854715202004e-14,
+    "maximum_second_difference_identity_residual": 8.977193988179977e-16,
+    "maximum_second_difference_to_proved_bound_ratio": 0.9986450364080833,
+    "maximum_hellinger_squared_to_proved_bound_ratio": 0.0572781494244473
+  },
+  "direct_matrix_cases": [
+    {
+      "L": 3,
+      "reference_levels": 2,
+      "reference_mean_excitation": 0.5000000000000001,
+      "reference_variance": 0.25,
+      "pair_count": 1,
+      "same_pair_matrix_reused": true,
+      "pair_error_from_full_density_matrix": 0.5000000000000001,
+      "pair_error_from_sector_benchmark": 0.49999999999999994,
+      "unitarity_spectral_residual": 1.0532022181337766e-16,
+      "charge_commutator_spectral_residual": 0.0,
+      "final_state_normalization_error": 0.0,
+      "stages": [
+        {
+          "pairs_processed": 1,
+          "full_joint_trace_distance": 0.5000000000000001,
+          "hybrid_upper": 0.5000000000000001,
+          "collective_optimum_for_same_reference": 0.49999999999999994
+        }
+      ]
+    },
+    {
+      "L": 4,
+      "reference_levels": 3,
+      "reference_mean_excitation": 1.0,
+      "reference_variance": 0.3333333333333335,
+      "pair_count": 2,
+      "same_pair_matrix_reused": true,
+      "pair_error_from_full_density_matrix": 0.3538701352807559,
+      "pair_error_from_sector_benchmark": 0.35387013528075567,
+      "unitarity_spectral_residual": 3.4623872902346343e-16,
+      "charge_commutator_spectral_residual": 0.0,
+      "final_state_normalization_error": 0.0,
+      "stages": [
+        {
+          "pairs_processed": 1,
+          "full_joint_trace_distance": 0.35387013528075645,
+          "hybrid_upper": 0.3538701352807559,
+          "collective_optimum_for_same_reference": 0.35387013528075567
+        },
+        {
+          "pairs_processed": 2,
+          "full_joint_trace_distance": 0.5359256433050528,
+          "hybrid_upper": 0.7077402705615118,
+          "collective_optimum_for_same_reference": 0.4911816826612425
+        }
+      ]
+    },
+    {
+      "L": 8,
+      "reference_levels": 7,
+      "reference_mean_excitation": 2.9999999999999996,
+      "reference_variance": 1.2810485835025407,
+      "pair_count": 3,
+      "same_pair_matrix_reused": true,
+      "pair_error_from_full_density_matrix": 0.13554368395594596,
+      "pair_error_from_sector_benchmark": 0.13554368395594588,
+      "unitarity_spectral_residual": 5.393348854656705e-16,
+      "charge_commutator_spectral_residual": 0.0,
+      "final_state_normalization_error": 1.1102230246251565e-16,
+      "stages": [
+        {
+          "pairs_processed": 1,
+          "full_joint_trace_distance": 0.13554368395594624,
+          "hybrid_upper": 0.13554368395594596,
+          "collective_optimum_for_same_reference": 0.13554368395594588
+        },
+        {
+          "pairs_processed": 2,
+          "full_joint_trace_distance": 0.23998655691439358,
+          "hybrid_upper": 0.2710873679118919,
+          "collective_optimum_for_same_reference": 0.22706934049441613
+        },
+        {
+          "pairs_processed": 3,
+          "full_joint_trace_distance": 0.3258722972369898,
+          "hybrid_upper": 0.4066310518678379,
+          "collective_optimum_for_same_reference": 0.2949108732089966
+        }
+      ]
+    },
+    {
+      "L": 16,
+      "reference_levels": 15,
+      "reference_mean_excitation": 7.0,
+      "reference_variance": 5.121976274732248,
+      "pair_count": 3,
+      "same_pair_matrix_reused": true,
+      "pair_error_from_full_density_matrix": 0.04240789733832351,
+      "pair_error_from_sector_benchmark": 0.04240789733832333,
+      "unitarity_spectral_residual": 7.227495104034328e-16,
+      "charge_commutator_spectral_residual": 0.0,
+      "final_state_normalization_error": 1.1102230246251565e-16,
+      "stages": [
+        {
+          "pairs_processed": 1,
+          "full_joint_trace_distance": 0.04240789733832354,
+          "hybrid_upper": 0.04240789733832351,
+          "collective_optimum_for_same_reference": 0.04240789733832333
+        },
+        {
+          "pairs_processed": 2,
+          "full_joint_trace_distance": 0.08030452712087488,
+          "hybrid_upper": 0.08481579467664702,
+          "collective_optimum_for_same_reference": 0.07793052255416082
+        },
+        {
+          "pairs_processed": 3,
+          "full_joint_trace_distance": 0.11543284667786395,
+          "hybrid_upper": 0.12722369201497052,
+          "collective_optimum_for_same_reference": 0.10904360792190518
+        }
+      ]
+    }
+  ],
+  "scaling_and_rounding": [
+    {
+      "N": 2,
+      "error_budget": 0.2,
+      "L_ceiling": 18,
+      "reference_mean_excitation": 8.0,
+      "pair_error": 0.03439570431921254,
+      "hybrid_upper": 0.03439570431921254,
+      "analytical_upper": 0.17234269126556165,
+      "collective_same_reference_error": 0.03439570431921254,
+      "universal_converse_at_this_mean_energy": 2.4111491518175495e-05
+    },
+    {
+      "N": 2,
+      "error_budget": 0.05,
+      "L_ceiling": 35,
+      "reference_mean_excitation": 16.5,
+      "pair_error": 0.010107730648290545,
+      "hybrid_upper": 0.010107730648290545,
+      "analytical_upper": 0.045925025871622914,
+      "collective_same_reference_error": 0.010107730648290545,
+      "universal_converse_at_this_mean_energy": 6.3774696747858435e-06
+    },
+    {
+      "N": 2,
+      "error_budget": 0.01,
+      "L_ceiling": 77,
+      "reference_mean_excitation": 37.5,
+      "pair_error": 0.0022266215778329436,
+      "hybrid_upper": 0.0022266215778329436,
+      "analytical_upper": 0.009508887558835945,
+      "collective_same_reference_error": 0.0022266215778329436,
+      "universal_converse_at_this_mean_energy": 1.317672358129755e-06
+    },
+    {
+      "N": 8,
+      "error_budget": 0.2,
+      "L_ceiling": 35,
+      "reference_mean_excitation": 16.5,
+      "pair_error": 0.010107730648290545,
+      "hybrid_upper": 0.04043092259316218,
+      "analytical_upper": 0.18370010348649166,
+      "collective_same_reference_error": 0.03670355385931137,
+      "universal_converse_at_this_mean_energy": 2.5508902584877054e-05
+    },
+    {
+      "N": 8,
+      "error_budget": 0.05,
+      "L_ceiling": 69,
+      "reference_mean_excitation": 33.5,
+      "pair_error": 0.0027554128463653615,
+      "hybrid_upper": 0.011021651385461446,
+      "analytical_upper": 0.0473602347014986,
+      "collective_same_reference_error": 0.010492974468693753,
+      "universal_converse_at_this_mean_energy": 6.563660947153058e-06
+    },
+    {
+      "N": 8,
+      "error_budget": 0.01,
+      "L_ceiling": 153,
+      "reference_mean_excitation": 75.5,
+      "pair_error": 0.0005796120739376209,
+      "hybrid_upper": 0.0023184482957504834,
+      "analytical_upper": 0.009637585625236774,
+      "collective_same_reference_error": 0.0022674296971120973,
+      "universal_converse_at_this_mean_energy": 1.3349530763961924e-06
+    },
+    {
+      "N": 32,
+      "error_budget": 0.2,
+      "L_ceiling": 69,
+      "reference_mean_excitation": 33.5,
+      "pair_error": 0.0027554128463653615,
+      "hybrid_upper": 0.044086605541845784,
+      "analytical_upper": 0.1894409388059944,
+      "collective_same_reference_error": 0.03778187675020123,
+      "universal_converse_at_this_mean_energy": 2.6253609847228903e-05
+    },
+    {
+      "N": 32,
+      "error_budget": 0.05,
+      "L_ceiling": 137,
+      "reference_mean_excitation": 67.5,
+      "pair_error": 0.0007205427693921507,
+      "hybrid_upper": 0.011528684310274411,
+      "analytical_upper": 0.04807893941264968,
+      "collective_same_reference_error": 0.010664317101521973,
+      "universal_converse_at_this_mean_energy": 6.659829241584383e-06
+    },
+    {
+      "N": 32,
+      "error_budget": 0.01,
+      "L_ceiling": 305,
+      "reference_mean_excitation": 151.5,
+      "pair_error": 0.000147916169214004,
+      "hybrid_upper": 0.002366658707424064,
+      "analytical_upper": 0.00970190685484084,
+      "collective_same_reference_error": 0.002284996590497598,
+      "universal_converse_at_this_mean_energy": 1.3437211939736693e-06
+    },
+    {
+      "N": 128,
+      "error_budget": 0.2,
+      "L_ceiling": 137,
+      "reference_mean_excitation": 67.5,
+      "pair_error": 0.0007205427693921507,
+      "hybrid_upper": 0.046114737241097645,
+      "analytical_upper": 0.19231575765059872,
+      "collective_same_reference_error": 0.03830555228821095,
+      "universal_converse_at_this_mean_energy": 2.6638252505429433e-05
+    },
+    {
+      "N": 128,
+      "error_budget": 0.05,
+      "L_ceiling": 273,
+      "reference_mean_excitation": 135.5,
+      "pair_error": 0.00018431794995896347,
+      "hybrid_upper": 0.011796348797373662,
+      "analytical_upper": 0.04843816307722364,
+      "collective_same_reference_error": 0.010744810514923443,
+      "universal_converse_at_this_mean_energy": 6.708707902455322e-06
+    },
+    {
+      "N": 128,
+      "error_budget": 0.01,
+      "L_ceiling": 610,
+      "reference_mean_excitation": 304.0,
+      "pair_error": 3.7243214534196156e-05,
+      "hybrid_upper": 0.002383565730188554,
+      "analytical_upper": 0.009702164193394477,
+      "collective_same_reference_error": 0.0022857533771234633,
+      "universal_converse_at_this_mean_energy": 1.3437211939736693e-06
+    }
+  ],
+  "finite_noise_check": {
+    "L": 12,
+    "pairs": 2,
+    "preparation_mixture_weight": 0.02,
+    "actual_preparation_trace_error": 0.01999002573928025,
+    "per_use_half_diamond_sufficient_upper": 0.01,
+    "actual_nominal_product_target_error": 0.1442108774426808,
+    "nominal_product_target_upper": 0.17964231993053087,
+    "actual_prepared_reference_product_target_error": 0.15163930247876475,
+    "prepared_reference_product_target_upper": 0.19963234566981114,
+    "noise_model": "At each use independently mix the ideal pair unitary with identity. The proved bound does not assume this independence."
+  },
+  "scope": "Finite floating-point diagnostics. Full matrix evolution checks the selected processors and global trace distances; theorems are analytical. No interval certificate, hardware realization, optimized constants, or physical control-cost claim."
+}

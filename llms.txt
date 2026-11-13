@@ -1,0 +1,33 @@
+# Quantum Coherence Reuse
+
+> Optimal initial reference mean energy for sequential production of independent coherent qubits with full joint product return.
+
+## Scientific question and central result
+
+For even N≥2, prepare N coherent qubits from fresh |01> pairs while returning the same initially independent reference. Score half trace distance to the reference tensor the complete ideal |+> output batch. The optimal reference mean energy is Theta(sqrt(N/delta)) uniformly at 0<delta≤1/8. The converse permits arbitrary mixed finite-mean references and deterministic time-translation-covariant operations; the upper repeats one finite exactly conserving pair processor.
+
+## Routes
+
+- [Overview](README.md): physical question, principal law, assumptions and reproduction.
+- [Connected science](science/README.md): proof structure and topic ownership.
+- [Exact model](science/model.md): optimizer domains, quantities, theorem, uniform regime and units.
+- [Mean-energy converse](science/converse.md): mixed-state product distinguishability, orbit contraction, first-moment energy control and constants.
+- [Finite construction](science/construction.md): sine-fourth profile, all charge-sector blocks, exact overlap and boundary-sensitive Hellinger estimate.
+- [Sequential reuse](science/sequential_reuse.md): same-processor hybrid, joint output accuracy and preparation/channel error budget.
+- [Examples](science/examples.md): three-level reference, explicit sector vectors, repeated finite states and sufficient inventory choices.
+- [Resource accounting](science/resource_accounting.md): mean reference energy, input excitation, ancillary asymmetry, broader converse and implementation limits.
+- [Physical interpretation](science/interpretation.md): balanced charge fluctuations, global versus local accuracy and compositional meaning.
+- [Related work](references/RELATED_WORK.md): established catalysis, reference longevity and normalized covariant-recovery mechanisms; scope of the optimal law.
+- [Bibliography](references/references.bib): primary source identities and versions.
+- [Verification](verification/README.md): runnable finite calculations, outputs and evidential limits.
+
+## Essential distinctions
+
+- Reference mean energy is measured above its ground in qubit-gap units; each input pair already supplies one excitation.
+- Global error includes every output and the returned reference. Marginal output quality does not replace this requirement.
+- Mixed, unbounded or sparse reference spectra are allowed in the converse when the first energy moment is finite. No variance bound is needed.
+- Arbitrary real spectra use time-translation covariance. The finite integer-ladder construction is its periodic special case.
+- The successful upper has no reference reset, postselection or discarded subsystem. The same pair unitary is reused; it may depend on the selected reference size.
+- A broader covariant optimization and a restricted sequential implementation have the same resource order; their finite optima are not asserted equal.
+- General catalytic preparation, quadratic marginal longevity, information-disturbance and sector-recovery tools are prior work. Do not attribute those principles to this result.
+- The finite computations exercise stated matrices and instances. They do not prove every parameter, certify priority, or establish an efficient hardware implementation.
